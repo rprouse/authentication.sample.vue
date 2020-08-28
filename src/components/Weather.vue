@@ -4,6 +4,7 @@
     <ul>
       <li v-for="day in weather" :key="day.date">{{day.date}} {{day.temperatureC}} {{day.summary}}</li>
     </ul>
+    <div class="notification" v-show="message">{{ message }}</div>
   </div>
 </template>
 
